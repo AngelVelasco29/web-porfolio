@@ -1,6 +1,6 @@
 {
   "homepage": "https://angelvelasco29.github.io/web-porfolio",
-  "name": "Portfolio web",
+  "name": "Platzi-Conf-Merch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
     "build": "webpack --mode production",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d dist",
     "format": "prettier --write \"{*.js,src/**/*.{js,jsx}}\"",
     "lint": "eslint src/ --fix"
   },
