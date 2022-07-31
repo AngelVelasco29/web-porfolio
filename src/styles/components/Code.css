@@ -1,0 +1,33 @@
+.Visual-code{
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+
+.Visual-numbers{
+    color: rgb(204, 204, 204);
+    font-size: 0.8rem;
+    padding-top: 0;
+    list-style: none;
+    margin: 0;
+    text-align: right;
+    padding-left: 0;
+    margin-top: 2px;
+}
+
+.Visual-numbers li{
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 15px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    color: rgb(204, 204, 204);
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
