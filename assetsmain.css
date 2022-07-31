@@ -211,6 +211,12 @@ input:checked + .slider:before {
   }
 
 }
+
+@media (max-width:600px) {
+  .logos-container h1{
+    display: none;
+  }
+}
 .Footer {
   display: flex;
   justify-content: space-between;
@@ -248,6 +254,7 @@ body {
     display: flex;
     align-items: center;
     grid-area: options;
+    overflow: hidden;
 }
 
 .Visual-options img{
@@ -396,6 +403,7 @@ span.span-explorer{
         grid-template-areas:
         "options options options"
         "icons code web";
+        width:100%;
     }
     .Visual-explorer{
         display: none;
@@ -411,6 +419,8 @@ span.span-explorer{
         "icons web";
     }
 }
+
+
 .Visual-web{
     background: red;
     width: 100%;
