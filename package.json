@@ -1,5 +1,6 @@
 {
-  "name": "platzi-conf-merch",
+  "homepage": "https://angelvelasco29.github.io/web-porfolio",
+  "name": "Portfolio web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
     "build": "webpack --mode production",
+    "deploy":"gh-pages -d build",
     "format": "prettier --write \"{*.js,src/**/*.{js,jsx}}\"",
     "lint": "eslint src/ --fix"
   },
@@ -33,6 +35,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",
+    "gh-pages": "^4.0.0",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",

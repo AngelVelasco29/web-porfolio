@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AppContext from '@context/AppContext';
 import '@stylesComponents/WebSite.css';
-import photo from '@images/person.jpeg'
+import photo from '@images/photo.jpg'
 import border from '@images/border.png'
 const WebSite = () => {
     const {state}= useContext(AppContext);
