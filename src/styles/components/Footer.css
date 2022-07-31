@@ -1,4 +1,33 @@
 .Footer {
+  width: 100%;
+}
+
+.Footer-title{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Footer-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.Footer-image{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Footer-image img{
+  width: 40%;
+  border-radius: 50%;
+}
+
+.Footer-social{
+  width: 40%;
 }

@@ -9,8 +9,8 @@ const Portfolio = () => {
     const {en}=state.language;
     const {english, darkMode}= state;
     return (
-        <div className='Portfolio-container'>
-            <h2>{(english) ?en.portfolio : es.portfolio}</h2>
+        <div className={(darkMode) ?'Portfolio-container body-dark': 'Portfolio-container'}>
+            <h2 className={(darkMode) ?'letter-color-dark': ''}>{(english) ?en.portfolio : es.portfolio}</h2>
             <div className='Portfolio-items'>
                 {portfolioItems.map(item=>(<PortfolioItem key={item.id} item={item}/>))}
             </div>

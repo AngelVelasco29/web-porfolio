@@ -210,3 +210,9 @@ input:checked + .slider:before {
   }
 
 }
+
+@media (max-width:600px) {
+  .logos-container h1{
+    display: none;
+  }
+}

@@ -4,8 +4,10 @@
 
 .Portfolio-container h2{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     font-size: 2rem;
+    margin: 0;
 }
 
 .Portfolio-items{

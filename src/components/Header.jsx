@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import {Link} from 'react-router-dom';
 import AppContext from '@context/AppContext';
 import '@stylesComponents/Header.css';
+import Social from './Social';
 import logo from '@logos/logo.PNG';
 import logo2 from '@logos/logoWhite.png';
 import mexico from '@icons/mexico.svg';
@@ -72,25 +73,7 @@ const Header = () => {
                     <i className={(darkMode) ?'letter-color-dark fa-solid fa-moon': 'fa-solid fa-moon'}></i>
                 </div>
             </div>
-            <nav className='Header-social'>
-                <ul className='Header-social-ul'>
-                    <li>
-                        <Link to="/" className={(darkMode) ?'letter-color-dark': ''}>
-                        <i className="fa-brands fa-square-facebook"></i>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/" className={(darkMode) ?'letter-color-dark': ''}>
-                            <i className="fa-brands fa-square-instagram"></i>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/" className={(darkMode) ?'letter-color-dark': ''}>
-                            <i className="fa-brands fa-square-whatsapp"></i>
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
+            <Social/>
         </header>
     );
 };

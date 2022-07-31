@@ -7,11 +7,29 @@ import wordle from '@portfolio/wordle.PNG';
 import html5 from '@portfolio/html5.svg';
 import css from '@portfolio/css.svg';
 import javascript from '@portfolio/Javascript.svg';
+import ittg from '@portfolio/ittg.svg';
+import platzi from '@portfolio/platzi.png';
+import photo from '@images/photo.jpg';
 
 
 export default {
     english:false,
     darkMode:false,
+    myInfo:{
+        'photo': photo,
+    },
+    training:{
+        'es':{
+
+        },
+        'en':{
+
+        },
+        'images':{
+            'ittg': ittg,
+            'platzi': platzi,
+        }
+    },
     language:{
         'es': {
             'aboutMe':'Acerca de mí',
@@ -36,6 +54,7 @@ export default {
             'image': pokedex,
             'title': 'PokeDex',
             'programming':[javascript],
+            'github':'https://github.com/AngelVelasco29/pokedex',
             'description':{
                 'es':'Este proyecto tuvo como proposito mejorar mis habilidades en CSS, como por ejemplo en el uso de GRID, FLEX.',
                 'en':' english'
@@ -46,6 +65,7 @@ export default {
             'image': wordle,
             'title': 'Encuentra la Palabra',
             'programming':[javascript],
+            'github':'https://github.com/AngelVelasco29/Wordle',
             'description':{
                 'es':'Este proyecto tuvo como proposito mejorar mis habilidades en javaScript, como por ejemplo en el uso de Arrays y sus metodos.',
                 'en':' english'
@@ -56,6 +76,7 @@ export default {
             'image': clonYoutube,
             'title': 'Clon de Youtube',
             'programming':[css],
+            'github':'https://github.com/AngelVelasco29/clon-you-tube',
             'description':{
                 'es':'Este proyecto tuvo como proposito mejorar mis habilidades en CSS, como por ejemplo en el uso de GRID, FLEX.',
                 'en':' english'
@@ -66,6 +87,7 @@ export default {
             'image': timer,
             'title': 'Cronometro, Temporizador y Pomodoro',
             'programming':[html5],
+            'github':'https://github.com/AngelVelasco29/PlatziTime',
             'description': {
                 'es':'Este proyecto tuvo como proposito mejorar mis habilidades en JavaScript, como por ejemplo el uso del setInterval y manejo del DOM. ',
                 'en':' english'
@@ -76,6 +98,7 @@ export default {
             'image': clonTwitter,
             'title': 'Clon de inicio de Sesión de Twitter',
             'programming':[html5],
+            'github':'https://github.com/AngelVelasco29/twitter-clon',
             'description': {
                 'es':'Este proyecto tuvo como proposito mejorar mis habilidades en CSS, como por ejemplo el posicionamiento de los elementos, manejo del DOM y creacion de formularios. ',
                 'en':' english'
@@ -86,6 +109,7 @@ export default {
             'image': inicioMV,
             'title': 'Inicio de sesión',
             'programming':[css],
+            'github':'https://github.com/AngelVelasco29/inicio-de-sesion-mv',
             'description': {
                 'es':'Este proyecto tuvo como proposito mejorar mis habilidades en CSS, como por ejemplo el posicionamiento de los elementos y creacion de formularios. ',
                 'en':' english'
