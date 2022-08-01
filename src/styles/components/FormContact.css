@@ -1,0 +1,79 @@
+:root{
+    --border-input-top-color: #1d457c;
+    --text-input-top-color:silver;
+    --text-input-top-font-family: Arial, Helvetica, sans-serif;
+    --background-input-top-color: white;
+}
+
+
+/*reposo*/
+.input-top{
+    margin-bottom: 12px;
+}
+
+.input-top label{
+    display: block;
+    border: 2px solid var(--text-input-top-color);
+    padding: 8px 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.input-top label .input,
+.input-top label span{
+    font-size: 16px;
+    font-family: var(--text-input-top-font-family);
+}
+
+.input-top label .input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    z-index: 2;
+}
+
+.input-top label span {
+    color: var(--text-input-top-color);
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: .25s;
+    cursor: text;
+}
+
+/*focus*/
+.input-top label.focus {
+    border-color: var(--border-input-top-color);
+    
+}
+
+.input-top label span.focus {
+    color: var(--border-input-top-color);
+}
+
+
+/*top*/
+
+.input-top label span.top{
+    left: 2px;
+    top: -10px;
+    font-size: 12px;
+    background: var(--background-input-top-color);
+    padding: 0 5px;
+}
+
+.input-top label .textarea{
+    color: black;
+    height: 100px;
+}
+
+.Form-contact{
+    width: 60%;
+}
+
+.Form-button{
+    width: 40%;
+    height: 40px;
+}

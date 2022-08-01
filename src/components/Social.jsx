@@ -9,12 +9,12 @@ const Social = () => {
             <ul className='Header-social-ul'>
                 <li>
                     <a href="https://github.com/AngelVelasco29" target="_blank" className={(darkMode) ? 'letter-color-dark' : ''}>
-                        <i class="fa-brands fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/angel_velasco_b" target="_blank" className={(darkMode) ? 'letter-color-dark' : ''}>
-                        <i class="fa-brands fa-square-twitter"></i>
+                        <i className="fa-brands fa-square-twitter"></i>
                     </a>
                 </li>
                 <li>
