@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, {useContext} from 'react';
+import AppContext from '@context/AppContext';
 import '@stylesComponents/Code.css';
-let lines = [1, 2, 3];
-const numbers = [];
-
+let lines=[];
 
 const Code = () => {
-    const textArea = React.createRef();
-    const [change, setChange] = useState(false);
+    const InputTextarea = React.createRef();
+    const {state, changeTextArea}=useContext(AppContext);
+    const {textarea}=state;
+    lines=textarea.split("\n");;
     const handleTextArea = () => {
-        lines = textArea.current.value.split("\n");
-        setChange(!change);
+        changeTextArea(InputTextarea.current.value);
+        lines = textarea.split("\n");
     }
 
     return (
@@ -19,7 +20,7 @@ const Code = () => {
                     return <li key={index}>{index + 1}</li>
                 })}
             </ul>
-            <textarea ref={textArea} onChange={handleTextArea} />
+            <textarea ref={InputTextarea} onChange={handleTextArea} value={textarea} />
         </div>
     );
 };

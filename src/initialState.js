@@ -10,11 +10,12 @@ import javascript from '@portfolio/Javascript.svg';
 import ittg from '@portfolio/ittg.svg';
 import platzi from '@portfolio/platzi.png';
 import photo from '@images/photo.jpg';
-
+import react from '@portfolio/React.svg';
 
 export default {
     english:false,
     darkMode:false,
+    textarea:'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta http-equiv="X-UA-Compatible" content="IE=edge">\n  <meta name="viewport" content="width=device-width">\n  <title>Acerca de mí</title>\n</head>\n<body>\n  <div>\n    <p>EN CONSTRUCCION</p>\n  </div>\n</body>\n</html>',
     myInfo:{
         'photo': photo,
     },
@@ -63,6 +64,17 @@ export default {
         {
             'id': '2',
             'image': wordle,
+            'title': 'Portafolio Web',
+            'programming':[react],
+            'github':'https://github.com/AngelVelasco29/web-porfolio',
+            'description':{
+                'es':'Este proyecto me ayudo a conocer el manejo React, useContext, useRef, useState',
+                'en':' english'
+            },
+        },
+        {
+            'id': '3',
+            'image': wordle,
             'title': 'Encuentra la Palabra',
             'programming':[javascript],
             'github':'https://github.com/AngelVelasco29/Wordle',
@@ -72,7 +84,7 @@ export default {
             },
         },
         {
-            'id': '3',
+            'id': '4',
             'image': clonYoutube,
             'title': 'Clon de Youtube',
             'programming':[css],
@@ -83,7 +95,7 @@ export default {
             },
         },
         {
-            'id': '4',
+            'id': '5',
             'image': timer,
             'title': 'Cronometro, Temporizador y Pomodoro',
             'programming':[html5],
@@ -94,7 +106,7 @@ export default {
             },
         },
         {
-            'id': '5',
+            'id': '6',
             'image': clonTwitter,
             'title': 'Clon de inicio de Sesión de Twitter',
             'programming':[html5],
@@ -105,7 +117,7 @@ export default {
             },
         },
         {
-            'id': '6',
+            'id': '7',
             'image': inicioMV,
             'title': 'Inicio de sesión',
             'programming':[css],

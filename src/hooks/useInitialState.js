@@ -18,10 +18,18 @@ const useInitialState = () => {
         })
     }
 
+    const changeTextArea=(payload)=>{
+        setState({
+            ...state,
+            textarea:payload
+        })
+    }
+
        return {
         state,
         language,
         dark,
+        changeTextArea
     }
 };
 
