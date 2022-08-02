@@ -25,9 +25,20 @@
 
 .Footer-image img{
   width: 40%;
+  min-width: 250px;
   border-radius: 50%;
+  margin-bottom: 12px;
 }
 
 .Footer-social{
   width: 40%;
+  min-width: 250px;
+  margin-bottom: 12px;
+}
+
+@media (max-width:750px) {
+  .Footer-container{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }

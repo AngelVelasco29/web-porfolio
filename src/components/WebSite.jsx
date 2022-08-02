@@ -5,9 +5,8 @@ import border from '@images/border.png'
 const WebSite = () => {
     const { state } = useContext(AppContext);
     const { ittg, platzi } = state.training.images;
-    const {photo}=state.myInfo;
-    const { en } = state.language;
-    const { english, darkMode } = state;
+    const { photo } = state.myInfo;
+    const { proLanguage} = state;
     return (
         <div className='Visual-web'>
             <div className='Web-content'>
@@ -42,8 +41,38 @@ const WebSite = () => {
                         </label>
                         <label htmlFor="radio-2" className="card" id="card-2">
                             <img className='border-top' src={border} />
+                            <h3>Lenguajes de Programación:</h3>
+                            <div className='training-data'>
+                                <img src={proLanguage.arduino} />
+                                <div className='training-info'>
+                                    <ul>
+                                        <li>Diseños electronicos</li>
+                                        <li>IoT Internet de las cosas</li>
+                                        <li>Manejo de Microcontroladores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='training-data'>
+                                <img src={proLanguage.javascript} />
+                                <div className='training-info'>
+                                    <ul>
+                                        <li>Manejo del DOM</li>
+                                        <li>Manejo de Arrays</li>
+                                        <li>Programación estructurada</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='training-data'>
+                                <img src={proLanguage.react} />
+                                <div className='training-info'>
+                                    <ul>
+                                        <li>Manejo useState, useContext, useRef</li>
+                                        <li>Manejo de Rutas</li>
+                                        <li>Conocimientos en webpack</li>
 
-                            Hola 2
+                                    </ul>
+                                </div>
+                            </div>
                             <img className='border-bottom' src={border} />
                         </label>
                         <label htmlFor="radio-3" className="card" id="card-3">

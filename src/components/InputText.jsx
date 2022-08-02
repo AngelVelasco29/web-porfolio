@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import AppContext from '@context/AppContext';
 import '@stylesComponents/FormContact.css';
 const InputText = ({name, type}) => {
+    const {state}= useContext(AppContext);
+    const {darkMode}= state;
     const input = React.createRef();
     const inputFocus= ()=>{
         input.current.previousElementSibling.classList.add('top');
@@ -18,11 +21,11 @@ const InputText = ({name, type}) => {
     }
 
     return (
-        <div className="input-top">
+        <div className={(darkMode) ?'input-top input-dark': 'input-top'}>
             <label>
                 <span htmlFor={name}>{name}</span>
                 {(type=="text")
-                    ? <input className="input" id={name} type="text" autoComplete="off" name={name} ref={input} onFocus={inputFocus} onBlur={inputBlur}/>
+                    ? <input className="input input-dark" id={name} type="text" autoComplete="off" name={name} ref={input} onFocus={inputFocus} onBlur={inputBlur}/>
                     : <textarea className="input textarea" id={name} autoComplete="off" name={name} ref={input} onFocus={inputFocus} onBlur={inputBlur}/>
                 }
             </label>

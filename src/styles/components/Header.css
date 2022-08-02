@@ -10,6 +10,7 @@
   display:flex;
   align-items: center;
   height: 60px;
+  justify-self: center;
 }
 
 .logos-container .logo{
@@ -212,7 +213,21 @@ input:checked + .slider:before {
 }
 
 @media (max-width:600px) {
+  .Header{
+    grid-template-areas:
+    "logo social"
+    "logo language"
+    "logo navbar ";
+    grid-template-columns: 20% 80% ;
+  }
+  
   .logos-container h1{
     display: none;
+    
   }
+
+  .Header-nav-ul{
+font-size: 0.8rem;
+  }
+  
 }

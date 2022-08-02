@@ -48,11 +48,6 @@ const Header = () => {
                             {(english) ?en.contact : es.contact}
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/" className={(darkMode) ?'letter-color-dark': ''}>
-                            {(english) ?en.blog : es.blog}
-                        </Link>
-                    </li>
                 </ul>
             </nav>
             <div className='Header-config'>

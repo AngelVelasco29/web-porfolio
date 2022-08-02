@@ -2,8 +2,6 @@
     background: red;
     width: 100%;
     height: 88%;
-    border-bottom: 1px solid rgb(30, 30, 30);
-    border-right: 1px solid rgb(30, 30, 30);
     position: relative;
     z-index: 4;
     place-items: center;
@@ -135,6 +133,7 @@
     margin-top: 40px;
     margin-bottom: 5px;
     align-self: center;
+    text-align: center;
 }
 
 .training-data{
@@ -142,12 +141,16 @@
 }
 
 .training-data img{
-    padding: 10px;
-    width: 70px;
-    height: 70px;
+    padding: 5px 10px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 70px;
+    max-height: 70px;
+    min-width: 30px;
+    min-height: 30px;
 }
 
 .training-info ul{
     padding-left: 10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }

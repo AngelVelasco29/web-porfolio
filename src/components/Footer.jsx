@@ -7,9 +7,10 @@ import FormContact from './FormContact';
 const Footer = () => {
     const {state}= useContext(AppContext);
     const {photo}= state.myInfo;
+    const {darkMode}= state;
     return (
-        <div className='Footer'>
-            <h2 className='Footer-title'>Contacto</h2>
+        <div className={(darkMode) ?'Footer dark': 'Footer'}>
+            <h2 className={(darkMode) ?'letter-color-dark Footer-title': 'Footer-title'}>Contacto</h2>
             <div className='Footer-container'>
                 <div className='Footer-image'>
                     <img src={photo}/>
