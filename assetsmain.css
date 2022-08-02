@@ -909,4 +909,5 @@ background: linear-gradient(36deg, rgba(196,97,242,1) 0%, rgba(2,143,210,1) 100%
 .VisualProyect-iframe{
     width: 100vw;
     height: 100vh;
+    padding-top: 20px;
 }
