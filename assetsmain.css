@@ -213,8 +213,13 @@ input:checked + .slider:before {
 }
 
 @media (max-width:600px) {
+  .Header{
+    grid-template-columns: 18% 42% 40% ;
+  }
+  
   .logos-container h1{
     display: none;
+    
   }
 }
 .Footer {
@@ -244,14 +249,25 @@ input:checked + .slider:before {
 
 .Footer-image img{
   width: 40%;
+  min-width: 250px;
   border-radius: 50%;
+  margin-bottom: 12px;
 }
 
 .Footer-social{
   width: 40%;
+  min-width: 250px;
+  margin-bottom: 12px;
+}
+
+@media (max-width:750px) {
+  .Footer-container{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 :root{
-    --border-input-top-color: #1d457c;
+    --border-input-top-color: rgb(195, 7, 252);
     --text-input-top-color:silver;
     --text-input-top-font-family: Arial, Helvetica, sans-serif;
     --background-input-top-color: white;
@@ -270,6 +286,11 @@ input:checked + .slider:before {
     position: relative;
     border-radius: 10px;
 }
+
+.input-dark label{
+    border: 2px solid rgb(230, 180, 18);
+}
+
 
 .input-top label .input,
 .input-top label span{
@@ -295,9 +316,18 @@ input:checked + .slider:before {
     cursor: text;
 }
 
+.input-dark label span{
+    color: rgb(230, 180, 18);
+}
+
 /*focus*/
 .input-top label.focus {
     border-color: var(--border-input-top-color);
+    
+}
+
+.input-dark label.focus {
+    border-color: white;
     
 }
 
@@ -305,6 +335,9 @@ input:checked + .slider:before {
     color: var(--border-input-top-color);
 }
 
+.input-dark label span.focus {
+    color: white;
+}
 
 /*top*/
 
@@ -316,6 +349,10 @@ input:checked + .slider:before {
     padding: 0 5px;
 }
 
+.input-dark label span.top{
+    background: rgb(60, 60, 60);
+}
+
 .input-top label .textarea{
     color: black;
     height: 100px;
@@ -323,6 +360,7 @@ input:checked + .slider:before {
 
 .Form-contact{
     width: 60%;
+    min-width: 300px;
 }
 
 .Form-button{
