@@ -7,6 +7,7 @@ import NotFound from '../containers/NotFound';
 import useInitialState from '../hooks/useInitialState';
 import AppContext from '../context/AppContext';
 import Portfolio from '../components/Portfolio';
+import About from '@container/About'
 
 const App = () => {
     const initialState = useInitialState()
@@ -18,6 +19,8 @@ const App = () => {
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/proyect" element={<Portfolio/>} />
+                        <Route exact path="/contact" />
+                        <Route exact path="/about" element={<About/>} />
                         <Route exact path="/proyect/:title" element={<Proyect/>} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>

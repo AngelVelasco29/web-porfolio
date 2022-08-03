@@ -4,15 +4,15 @@ import InputText from './InputText';
 
 const FormContact = () => {
     const { state } = useContext(AppContext);
-    const { darkMode } = state;
+    const { darkMode, english } = state;
     return (
         <form className='Form-contact'>
-            <p className={(darkMode) ? 'letter-color-dark' : ''}>Necesitas ayuda, escribeme</p>
-            <InputText name="Nombre" type="text" />
-            <InputText name="Celular" type="text" />
-            <InputText name="Email" type="text" />
-            <InputText name="Mensaje" type="textarea" />
-            <button type='button' className='Form-button'>Enviar</button>
+            <p className={(darkMode) ? 'letter-color-dark' : ''}>{(english) ? 'Do you need help?': 'Necesitas ayuda?, escríbeme'}</p>
+            <InputText name={(english) ? 'Name': 'Nombre'} type="text" />
+            <InputText name={(english) ? 'Cell Phone': 'Celular'} type="text"  />
+            <InputText name={(english) ? 'Email': 'Correo'} type="text" />
+            <InputText name={(english) ? 'Message': 'Mensaje'} type="textarea" />
+            <button type='button' className='Form-button'>{(english) ? 'Send': 'Enviar'}</button>
         </form>
     );
 };

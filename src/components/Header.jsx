@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import AppContext from '@context/AppContext';
 import '@stylesComponents/Header.css';
@@ -7,22 +7,36 @@ import logo from '@logos/logo.PNG';
 import logo2 from '@logos/logoWhite.png';
 import mexico from '@icons/mexico.svg';
 import usa from '@icons/usa.svg';
-
+let var1;
+let var2;
 const Header = () => {
-    const {state, language, dark}= useContext(AppContext);
-    const {es}= state.language;
-    const {en}=state.language;
+    const {state, language, dark,languageDark}= useContext(AppContext);
+    const {es, en}= state.language;
     const {english, darkMode}= state;
 
+    useEffect(()=>{
+        if(localStorage.language==='true'){
+            var1=false;
+        }else{
+            var1=true;
+        }
+        if(localStorage.darkmode==='true'){
+            var2=false;
+        }else{
+            var2=true;
+        }
+        languageDark(var1,var2);
+  
+    },[])
+
     const handleLanguage= ()=>{
-        console.log(english);
         language(english);
+        localStorage.setItem('language',english);
     }
 
     const handleDarkMode=()=>{
-        console.log(darkMode);
-
         dark(darkMode);
+        localStorage.setItem('darkmode', darkMode);
     }
 
     return (
@@ -34,17 +48,17 @@ const Header = () => {
             <nav className='Header-nav'>
                 <ul className={(darkMode) ?'Header-nav-ul letter-color-dark': 'Header-nav-ul'}>
                     <li>
-                        <Link to="/" className={(darkMode) ?'letter-color-dark': ''}>
+                        <Link to="/about" className={(darkMode) ?'letter-color-dark': ''}>
                         {(english) ?en.aboutMe : es.aboutMe}
                         </Link>
                     </li>
                     <li>
-                        <Link to="/" className={(darkMode) ?'letter-color-dark': ''}>
+                        <Link to="/proyect" className={(darkMode) ?'letter-color-dark': ''}>
                             {(english) ?en.portfolio : es.portfolio}
                         </Link>
                     </li>
                     <li>
-                        <Link to="/" className={(darkMode) ?'letter-color-dark': ''}>
+                        <Link to="/contact" className={(darkMode) ?'letter-color-dark': ''}>
                             {(english) ?en.contact : es.contact}
                         </Link>
                     </li>

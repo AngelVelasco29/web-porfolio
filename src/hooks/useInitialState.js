@@ -11,6 +11,14 @@ const useInitialState = () => {
         })
     }
 
+    const languageDark=(payload,payload2)=>{
+        setState({
+            ...state,
+            english:payload,
+            darkMode:payload2
+        })
+    }
+
     const dark=(payload)=>{
         setState({
             ...state,
@@ -29,7 +37,8 @@ const useInitialState = () => {
         state,
         language,
         dark,
-        changeTextArea
+        changeTextArea,
+        languageDark
     }
 };
 

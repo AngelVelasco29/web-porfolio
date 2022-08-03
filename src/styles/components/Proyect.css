@@ -1,0 +1,73 @@
+.Proyect-description{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.Proyect-img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+main.dark{  
+    background-color: rgb(80, 80, 80);
+}
+.Proyect-image-language{
+    display: flex;
+    justify-content: center;
+}
+
+.Proyect-data h1{
+    font-size: 2rem;
+}
+
+.Proyect-data-language {
+    background: conic-gradient(#d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+    #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+    #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+    #d7d7d7, #c3c3c3, #cccccc, #c6c6c6);
+    
+    box-shadow: -9px 14px 26px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -9px 14px 26px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -9px 14px 26px -2px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.Proyect-language{
+    width: 70px;
+    height: 70px;
+}
+
+.Proyect-button{
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+a.Proyect-button{
+    text-decoration: none;
+}
+
+a.button-webpage{
+    border: 1px solid #1288cc;
+}
+
+@media (max-width:750px) {
+    .Proyect-description{
+        flex-wrap: wrap;
+    }
+    .Proyect-img{
+        margin: 20px auto;
+    }
+    
+}
